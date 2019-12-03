@@ -1,3 +1,8 @@
+body {
+  margin: auto;
+  max-width: 800px;
+}
+
 header{
   height: 200px;
 	h1{
@@ -15,3 +20,63 @@ header{
     width: 800px;
   }
 }
+
+main {
+  
+  display: flex;
+
+  .noticias {
+    width: 60%;
+    margin: 3%;
+
+    .principal {
+      #carousel {
+        width: 500px;
+        height: 300px;
+      }
+  
+    }
+  
+    .secundarias {
+      display: flex;
+      flex-wrap: wrap;
+      .noticiaSecundaria {
+        width: 40%;
+        img {
+          width: 200px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  
+
+  aside {
+    width: 25%;
+    margin: 3%;
+    background-color: #e6e9ed;
+
+    .directos {
+      .directo{
+        .equipos {
+          display: flex;
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .parrafo {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+}
+

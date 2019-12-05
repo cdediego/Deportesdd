@@ -5,7 +5,7 @@
 
 body {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -150,3 +150,14 @@ main {
         margin-bottom: 0px;
     }
 }
+<<<<<<< Updated upstream
+=======
+
+///Dani-Body-Responsive
+@media screen and (max-with: 480px) {
+    aside {
+        display: block;
+        width: 100%;
+    }
+}
+>>>>>>> Stashed changes

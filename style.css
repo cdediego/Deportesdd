@@ -8,7 +8,7 @@
 >>>>>>> Stashed changes
 body {
   margin: auto;
-  max-width: 800px;
+  max-width: 1000px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -203,5 +203,12 @@ main .titulo {
 main .parrafo {
   font-size: 15px;
   margin-bottom: 0px;
+}
+
+@media screen and (max-with: 480px) {
+  aside {
+    display: block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

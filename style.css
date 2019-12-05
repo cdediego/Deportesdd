@@ -1,26 +1,23 @@
+* {
+  margin: 0 px;
+  padding: 0px;
+}
+
+body {
+  margin: auto;
+  max-width: 800px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 header {
-  height: 200px; }
-  header h1 {
-    color: #EA082A;
-    font-size: 120px;
-    text-align: center;
-    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
-    text-decoration: underline;
-  }
-  header nav{
-      background-color: #EA082A;
-      font-weight: bold;
-      font-size: 20px;
-      color: white;
-      height: 40px;
-      width: 800px;
-    }
+  height: 200px;
+}
 
 header h1 {
   color: #EA082A;
   font-size: 120px;
   text-align: center;
-  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-family: Franklin Gothic Book;
 }
 
 header nav {
@@ -28,5 +25,176 @@ header nav {
   font-weight: bold;
   font-size: 20px;
   color: white;
+  height: 40px;
+  width: 800px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .noticias {
+  width: 60%;
+  margin: 3%;
+}
+
+main .noticias .principal {
+  margin-bottom: 35px;
+}
+
+main .noticias .principal #carousel {
+  width: 500px;
+  height: 300px;
+}
+
+main .noticias .secundarias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .noticias .secundarias .noticiaSecundaria {
+  width: 40%;
+  margin-right: 48px;
+}
+
+main .noticias .secundarias .noticiaSecundaria img {
+  width: 221px;
+  height: 155px;
+}
+
+main .noticias .secundarias .noticiaSecundaria p {
+  text-align: center;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+main aside {
+  width: 28%;
+  margin: 3%;
+  background-color: #e6e9ed;
+  border: 2px solid gray;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main aside .resultados {
+  padding: 3px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-bottom: 1px solid gray;
+}
+
+main aside .resultados .resultado {
+  margin-bottom: 20px;
+}
+
+main aside .resultados .resultado div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main aside .resultados .resultado div img {
+  width: 38px;
+  height: 40px;
+}
+
+main aside .resultados .resultado div p {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+main aside .resultados .resultado p {
+  font-size: 11px;
+}
+
+main aside .directos {
+  padding: 3px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-bottom: 30px;
+}
+
+main aside .directos .directo .hora {
+  background-color: black;
+}
+
+main aside .directos .directo .hora p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+main aside .directos .directo .equipos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main aside .directos .directo .equipos .equipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main aside .directos .directo .equipos .equipo p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+main aside .directos .directo .equipos .versus {
+  width: 34px;
+  height: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+main aside .directos .directo .equipos img {
+  width: 30px;
+}
+
+main aside .tituloJornada {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main aside .fecha {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+main .titulo {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .parrafo {
+  font-size: 15px;
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */

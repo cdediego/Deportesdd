@@ -34,7 +34,7 @@ main {
         margin: 3%;
         .principal {
             margin-bottom: 35px;
-            #carousel {
+            #imagenCarousel {
                 width: 500px;
                 height: 300px;
             }
@@ -45,6 +45,7 @@ main {
             .noticiaSecundaria {
                 width: 40%;
                 margin-right: 48px;
+                margin-bottom: 20px;
                 img {
                     // width: 200px;
                     // height: 120px;
@@ -109,6 +110,9 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                
                     .equipo {
                         display: flex;
                         flex-direction: column;
@@ -133,6 +137,8 @@ main {
         .tituloJornada {
             font-weight: bold;
             font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .fecha {
             font-size: 12px;
@@ -143,15 +149,10 @@ main {
         font-size: 25px;
         font-weight: bold;
         text-align: center;
+        margin-bottom: 10px;
     }
     .parrafo {
         font-size: 15px;
         margin-bottom: 0px;
     }
 }
-
-//////////////////////////////RUBEN
-footer {
-    background-color: #EA082A;
-}
-/////////////////////////////////

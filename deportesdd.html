@@ -5,9 +5,10 @@
     <title>DeportesDD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-</head>
+    <script src="carousel.js"></script>
+  </head>
 
-<body>
+  <body onload = "startCarousel()">
     <header>
         <h1>DIARIODD</h1>
 
@@ -29,11 +30,10 @@
     <main>
         <div class="noticias">
 
-            <div class="principal">
-                <!--carousel-->
-                <img id="carousel" src="imagenes/imagenes/img2.png">
-                <p class="titulo">Con gol de Dybala. la Juventus ganó.</p>
-                <p class="parrafo">En la anteúltima fecha de la fase de grupos de la UEFA Champions League, la Juventus se impulsó 1 a 0 ante el Atletico Madrid en Turin y se adueñó de la cima del Grupo D.</p>
+            <div class="principal"> <!--carousel-->
+                <img id="imagenCarousel" src="imagenes/imagenes/img2.png">
+                <p id="titularCarousel" class="titulo">Con gol de Dybala. la Juventus ganó.</p>
+                <p id="parrafoCarousel" class="parrafo">En la anteúltima fecha de la fase de grupos de la UEFA Champions League, la Juventus se impulsó 1 a 0 ante el Atletico Madrid en Turin y se adueñó de la cima del Grupo D.</p>
                 <a href="#">Seguir leyendo</a>
             </div>
 

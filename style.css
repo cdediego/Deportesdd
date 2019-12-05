@@ -44,7 +44,7 @@ main .noticias .principal {
   margin-bottom: 35px;
 }
 
-main .noticias .principal #carousel {
+main .noticias .principal #imagenCarousel {
   width: 500px;
   height: 300px;
 }
@@ -60,6 +60,7 @@ main .noticias .secundarias {
 main .noticias .secundarias .noticiaSecundaria {
   width: 40%;
   margin-right: 48px;
+  margin-bottom: 20px;
 }
 
 main .noticias .secundarias .noticiaSecundaria img {
@@ -146,6 +147,8 @@ main aside .directos .directo .equipos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main aside .directos .directo .equipos .equipo {
@@ -180,6 +183,8 @@ main aside .directos .directo .equipos img {
 main aside .tituloJornada {
   font-weight: bold;
   font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main aside .fecha {
@@ -191,14 +196,11 @@ main .titulo {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 main .parrafo {
   font-size: 15px;
   margin-bottom: 0px;
-}
-
-footer {
-  background-color: #EA082A;
 }
 /*# sourceMappingURL=style.css.map */

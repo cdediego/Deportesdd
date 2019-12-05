@@ -1,8 +1,11 @@
+<<<<<<< Updated upstream
 * {
   margin: 0px;
   padding: 0px;
 }
 
+=======
+>>>>>>> Stashed changes
 body {
   margin: auto;
   max-width: 800px;
@@ -44,7 +47,11 @@ main .noticias .principal {
   margin-bottom: 35px;
 }
 
+<<<<<<< Updated upstream
 main .noticias .principal #carousel {
+=======
+main .noticias .principal #imagenCarousel {
+>>>>>>> Stashed changes
   width: 500px;
   height: 300px;
 }

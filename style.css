@@ -1,5 +1,5 @@
 * {
-  margin: 0 px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -196,5 +196,9 @@ main .titulo {
 main .parrafo {
   font-size: 15px;
   margin-bottom: 0px;
+}
+
+footer {
+  background-color: #EA082A;
 }
 /*# sourceMappingURL=style.css.map */

@@ -203,4 +203,50 @@ main .parrafo {
   font-size: 15px;
   margin-bottom: 0px;
 }
+
+@media screen and (max-width: 460px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  main .noticias {
+    width: 100%;
+    margin: 10px 0;
+  }
+  main .noticias .principal #imagenCarousel {
+    width: 100%;
+  }
+  main .noticias .principal #keepReading {
+    display: none;
+  }
+  main .noticias .secundarias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main .noticias .secundarias .noticiaSecundaria {
+    width: 100%;
+    margin: 0px;
+  }
+  main .noticias .secundarias .noticiaSecundaria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  .aside {
+    margin: 0px;
+    width: 99%;
+    display: block;
+  }
+  #parrafoCarousel {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

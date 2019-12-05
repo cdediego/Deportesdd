@@ -1,21 +1,45 @@
-function startCarousel() {
-    setInterval( function () {
-        let actualSrc = document.getElementById('imagenCarousel').getAttribute("src");
-        console.log(actualSrc);
-        
+const titulares = {
+    noticia1: {
+        titular: "Messi ya sabe que ganará el Balón de Oro",
+        parrafo: "Una delegación de France Football estuvo ayer en Barcelona para informarle de ello antes de hacer una entrevista y las fotos para la portada del martes 3",
+        imagenSrc: "imagenes/imagenes/img1.png"
+    },
+    noticia2: {
+        titular: "Con el gol de Dybala, la juventus ganó",
+        parrafo: "En la anteúltima fecha de la fase de grupos de la UEFA Champions League, la Juventus se impulsó 1 a 0 ante el Atletico Madrid en Turin y se adueñó de la cima del Grupo D.",
+        imagenSrc: "imagenes/imagenes/img2.png"
+    },
+    noticia3: {
+        titular: "El cabreo de Cristiano Ronaldo con las risas",
+        parrafo: "El astro portugués sufrió las burlas de sus compañeros, durante el último entrenamiento de la Juventus antes del partido de Champions League ante el Atlético de Madrid, tras sufrir un caño de Bonucci.",
+        imagenSrc: "imagenes/imagenes/img3.png"
+    }
+    
+}
 
-        if(actualSrc == 'imagenes/imagenes/img1.png'){
-            document.getElementById('imagenCarousel').src = 'imagenes/imagenes/img2.png';
-            document.getElementById('titularCarousel').innerHTML = 'Con el gol de Dybala, la juventus ganó.';
-            document.getElementById('parrafoCarousel').innerHTML = 'En la anteúltima fecha de la fase de grupos de la UEFA Champions League, la Juventus se impulsó 1 a 0 ante el Atletico Madrid en Turin y se adueñó de la cima del Grupo D.'
-        }else if(actualSrc == 'imagenes/imagenes/img2.png'){
-            document.getElementById('imagenCarousel').src = 'imagenes/imagenes/img3.png';
-            document.getElementById('titularCarousel').innerHTML = 'El cabreo de Cristiano Ronaldo con las risas';
-            document.getElementById('parrafoCarousel').innerHTML = 'El astro portugués sufrió las burlas de sus compañeros, durante el último entrenamiento de la Juventus antes del partido de Champions League ante el Atlético de Madrid, tras sufrir un caño de Bonucci.'
-        }else if(actualSrc == 'imagenes/imagenes/img3.png'){
-            document.getElementById('imagenCarousel').src = 'imagenes/imagenes/img1.png';
-            document.getElementById('titularCarousel').innerHTML = 'Messi ya sabe que ganará el Balón de Oro';
-            document.getElementById('parrafoCarousel').innerHTML = 'Una delegación de France Football estuvo ayer en Barcelona para informarle de ello antes de hacer una entrevista y las fotos para la portada del martes 3'
-        }
-    }, 5000);
+function startCarousel() {
+        setInterval( function () {
+            let screenWidth = screen.width; //se recoge el width en cada iteración y se comprueba
+            if (screenWidth > 460){
+                console.log(screenWidth);
+                let actualSrc = document.getElementById('imagenCarousel').getAttribute("src");
+                console.log(actualSrc);
+                if(actualSrc == 'imagenes/imagenes/img1.png'){
+                    document.getElementById('imagenCarousel').src = titulares.noticia2.imagenSrc;
+                    document.getElementById('titularCarousel').innerHTML = titulares.noticia2.titular;
+                    document.getElementById('parrafoCarousel').innerHTML = titulares.noticia2.parrafo;
+                }else if(actualSrc == 'imagenes/imagenes/img2.png'){
+                    document.getElementById('imagenCarousel').src = titulares.noticia3.imagenSrc;
+                    document.getElementById('titularCarousel').innerHTML = titulares.noticia3.titular;
+                    document.getElementById('parrafoCarousel').innerHTML = titulares.noticia3.parrafo;
+                }else if(actualSrc == 'imagenes/imagenes/img3.png'){
+                    document.getElementById('imagenCarousel').src = titulares.noticia1.imagenSrc;
+                    document.getElementById('titularCarousel').innerHTML = titulares.noticia1.titular;
+                    document.getElementById('parrafoCarousel').innerHTML = titulares.noticia1.parrafo;
+                }
+            }
+        }, 5000);
+}
+
+function generateCarouselDivs(){
 }

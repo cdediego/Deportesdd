@@ -156,3 +156,44 @@ main {
         margin-bottom: 0px;
     }
 }
+//Dani Mobile-Version for 460px
+@media screen and (max-width: 460px){
+    main{
+        flex-flow: column-reverse;
+        .noticias{
+            width: 100%;
+            margin: 10px 0;
+            .principal{
+                #imagenCarousel{
+                    width: 100%;
+                }
+                #keepReading{
+                    display: none;
+                }
+            }
+            .secundarias{
+                display: flex;
+                flex-flow: column;
+                .noticiaSecundaria{
+                    width: 100%;
+                    margin: 0px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        margin: 10px auto;
+                    }
+                }
+            }
+        }
+    }
+    .aside{
+        margin: 0px;
+        width: 99%;
+        display: block;
+    }
+    #parrafoCarousel{
+        display: none;
+    }
+}
+///////End Dani

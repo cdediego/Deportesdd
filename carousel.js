@@ -19,11 +19,9 @@ const titulares = {
 
 function startCarousel() {
         setInterval( function () {
-            let screenWidth = screen.width; //se recoge el width en cada iteración y se comprueba
+            let screenWidth = screen.width; //se recoge el width de la pantalla en cada iteración y se comprueba
             if (screenWidth > 460){
-                console.log(screenWidth);
                 let actualSrc = document.getElementById('imagenCarousel').getAttribute("src");
-                console.log(actualSrc);
                 if(actualSrc == 'imagenes/imagenes/img1.png'){
                     document.getElementById('imagenCarousel').src = titulares.noticia2.imagenSrc;
                     document.getElementById('titularCarousel').innerHTML = titulares.noticia2.titular;
@@ -41,5 +39,18 @@ function startCarousel() {
         }, 5000);
 }
 
-function generateCarouselDivs(){
-}
+/*
+    Intento de crear una función que genere auntomaticamente los divs por cada noticia.
+    No lo he conseguido, lo tengo que acabar de pensar bien.
+*/
+// function generateCarouselDivs(index){
+//     let wrapper = document.getElementsByClassName("principal"); //guardar el div .principal
+//     let numeroDeTitulares = Object.keys(titulares).length; //número de atributos que tiene el objeto titulares
+//     for (let i = 1; i <= numeroDeTitulares; i++){
+//         const noticiaPrincipal = document.createElement("div"); //crear div
+//         wrapper[0].appendChild(noticiaPrincipal); //meter el div al div .principal
+//         noticiaPrincipal.setAttribute("class", "noticiaPrincipal"+index);
+//         index++;
+//     }
+//     return index;
+// }

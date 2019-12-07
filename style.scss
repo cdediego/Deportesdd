@@ -4,6 +4,7 @@
     padding: 0px;
 }
 @import "mixins";
+@import "colors";
 body {
     margin: auto;
     max-width: 800px;
@@ -29,29 +30,29 @@ header {
 }
 
 main {
-    display: flex;
+    @include display(flex);
     .noticias {
-        width: 60%;
+        @include width(60%);
         margin: 3%;
         .principal {
-            margin-bottom: 35px;
+            @include marginBottom(35px);
             #imagenCarousel {
-                width: 95%;
-                height: auto;
+                @include width(95%);
+                @include height(auto);
             }
         }
         .secundarias {
-            display: flex;
+            @include display(flex);
             flex-wrap: wrap;
             .noticiaSecundaria {
-                width: 40%;
-                margin-right: 48px;
-                margin-bottom: 20px;
+                @include width(40%);
+                margin-right: 46px;
+                @include marginBottom(20px);
                 img {
                     // width: 200px;
                     // height: 120px;
-                    width: 221px;
-                    height: 155px;
+                    @include width(221px);
+                    @include height(155px);
                 }
                 p {
                     text-align: center;
@@ -63,33 +64,33 @@ main {
     }
     aside {
         //width: 25%;
-        width: 28%;
+        @include width(28%);
         margin: 3%;
-        background-color: #e6e9ed;
-        border: 2px solid gray;
-        height: fit-content;
+        background-color: $whiteAside;
+        border: 2px solid $gray;
+        @include height(fit-content);
         .resultados {
             padding: 3px;
             padding-left: 13px;
             padding-right: 13px;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid $gray;
             .resultado {
                 margin-bottom: 20px;
                 div {
-                    display: flex;
+                    @include display(flex);
                     align-items: center;
                     justify-content: space-around;
                     img {
-                        width: 38px;
-                        height: 40px;
+                        @include width(38px);
+                        @include height(40px);
                     }
                     p {
-                        font-size: 9px;
+                        @include fontSize(9px);
                         font-weight: bold;
                     }
                 }
                 p {
-                    font-size: 11px;
+                    @include fontSize(11px);
                 }
             }
         }
@@ -97,40 +98,40 @@ main {
             padding: 3px;
             padding-left: 13px;
             padding-right: 13px;
-            margin-bottom: 30px;
+            @include marginBottom(30px);
             .directo {
                 .hora {
-                    background-color: black;
+                    background-color: $black;
                     p {
-                        color: white;
+                        color: $white;
                         text-align: center;
-                        font-size: 12px;
+                        @include fontSize(12px);
                     }
                 }
                 .equipos {
-                    display: flex;
+                    @include display(flex);
                     justify-content: center;
                     align-items: center;
                     margin-top: 10px;
-                    margin-bottom: 10px;
+                    @include marginBottom(10px);
                 
                     .equipo {
-                        display: flex;
+                        @include display(flex);
                         flex-direction: column;
                         align-items: center;
                         p {
                             margin: 0;
-                            margin-bottom: 2px;
+                            @include marginBottom(2px);
                         }
                     }
                     .versus {
-                        width: 34px;
-                        height: 25px;
+                        @include width(34px);
+                        @include height(25px);
                         margin-right: 10px;
                         margin-left: 10px;
                     }
                     img {
-                        width: 30px;
+                        @include width(30px);
                     }
                 }
             }
@@ -139,22 +140,22 @@ main {
             font-weight: bold;
             font-size: 14px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            @include marginBottom(10px);
         }
         .fecha {
-            font-size: 12px;
-            margin-bottom: 30px;
+            @include fontSize(12px);
+            @include marginBottom(30px);
         }
     }
     .titulo {
-        font-size: 25px;
+        @include fontSize(25px);
         font-weight: bold;
         text-align: center;
-        margin-bottom: 10px;
+        @include marginBottom(10px);
     }
     .parrafo {
-        font-size: 15px;
-        margin-bottom: 0px;
+        @include fontSize(15px);
+        @include marginBottom(0px);
     }
 }
 //Dani Mobile-Version for 460px

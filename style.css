@@ -45,8 +45,13 @@ main .noticias .principal {
 }
 
 main .noticias .principal #imagenCarousel {
+<<<<<<< Updated upstream
   width: 95%;
   height: auto;
+=======
+  width: 500px;
+  height: 300px;
+>>>>>>> Stashed changes
 }
 
 main .noticias .secundarias {

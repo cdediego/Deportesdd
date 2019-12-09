@@ -5,19 +5,21 @@
 
 body {
   margin: auto;
-  max-width: 800px;
+  max-width: 1000px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
   height: 200px;
+  -webkit-text-decoration: underline #EA082A;
+          text-decoration: underline #EA082A;
 }
 
 header h1 {
   color: #EA082A;
   font-size: 120px;
   text-align: center;
-  font-family: Franklin Gothic Book;
+  font-family: 'Franklin Gothic Heavy', regular;
 }
 
 header nav {
@@ -27,6 +29,11 @@ header nav {
   color: white;
   height: 40px;
   width: 800px;
+}
+
+header select {
+  height: 40px;
+  width: 40px;
 }
 
 main {
@@ -45,13 +52,8 @@ main .noticias .principal {
 }
 
 main .noticias .principal #imagenCarousel {
-<<<<<<< Updated upstream
   width: 95%;
   height: auto;
-=======
-  width: 500px;
-  height: 300px;
->>>>>>> Stashed changes
 }
 
 main .noticias .secundarias {
@@ -64,7 +66,7 @@ main .noticias .secundarias {
 
 main .noticias .secundarias .noticiaSecundaria {
   width: 40%;
-  margin-right: 48px;
+  margin-right: 46px;
   margin-bottom: 20px;
 }
 

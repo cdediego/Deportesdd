@@ -1,207 +1,242 @@
-
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 @import "mixins";
 @import "colors";
 body {
-    margin: auto;
-    max-width: 1000px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;
+  max-width: 1000px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
-    height: 200px;
-    text-decoration: underline #EA082A;
-    h1 {
-        color: #EA082A;
-        font-size: 120px;
-        text-align: center;
-        font-family: 'Franklin Gothic Heavy', regular;
-    }
-    nav {
-        background-color: #EA082A;
-        font-weight: bold;
-        font-size: 20px;
-        color: white;
-        height: 40px;
-        width: 800px;
-    }
-    select{
-        height: 40px;
-        width: 40px;
-    }
-
+  height: 200px;
+  text-decoration: underline #ea082a;
+  h1 {
+    color: #ea082a;
+    font-size: 120px;
+    text-align: center;
+    font-family: "Franklin Gothic Heavy", regular;
+  }
+  nav {
+    background-color: #ea082a;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 800px;
+  }
+  select {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 main {
-    @include display(flex);
-    .noticias {
-        @include width(60%);
-        margin: 3%;
-        .principal {
-            @include marginBottom(35px);
-            #imagenCarousel {
-                @include width(95%);
-                @include height(auto);
-            }
-        }
-        .secundarias {
-            @include display(flex);
-            flex-wrap: wrap;
-            .noticiaSecundaria {
-                @include width(40%);
-                margin-right: 46px;
-                @include marginBottom(20px);
-                img {
-                    // width: 200px;
-                    // height: 120px;
-                    @include width(221px);
-                    @include height(155px);
-                }
-                p {
-                    text-align: center;
-                    margin-top: 4px;
-                    font-weight: bold;
-                }
-            }
-        }
+  @include display(flex);
+  .noticias {
+    @include width(60%);
+    margin: 3%;
+    .principal {
+      @include marginBottom(35px);
+      #imagenCarousel {
+        @include width(95%);
+        @include height(auto);
+      }
     }
-    aside {
-        //width: 25%;
-        @include width(28%);
-        margin: 3%;
-        background-color: $whiteAside;
-        border: 2px solid $gray;
-        @include height(fit-content);
-        .resultados {
-            padding: 3px;
-            padding-left: 13px;
-            padding-right: 13px;
-            border-bottom: 1px solid $gray;
-            .resultado {
-                margin-bottom: 20px;
-                div {
-                    @include display(flex);
-                    align-items: center;
-                    justify-content: space-around;
-                    img {
-                        @include width(38px);
-                        @include height(40px);
-                    }
-                    p {
-                        @include fontSize(9px);
-                        font-weight: bold;
-                    }
-                }
-                p {
-                    @include fontSize(11px);
-                }
-            }
+    .secundarias {
+      @include display(flex);
+      flex-wrap: wrap;
+      .noticiaSecundaria {
+        @include width(40%);
+        margin-right: 46px;
+        @include marginBottom(20px);
+        img {
+          // width: 200px;
+          // height: 120px;
+          @include width(221px);
+          @include height(155px);
         }
-        .directos {
-            padding: 3px;
-            padding-left: 13px;
-            padding-right: 13px;
-            @include marginBottom(30px);
-            .directo {
-                .hora {
-                    background-color: $black;
-                    p {
-                        color: $white;
-                        text-align: center;
-                        @include fontSize(12px);
-                    }
-                }
-                .equipos {
-                    @include display(flex);
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 10px;
-                    @include marginBottom(10px);
-                
-                    .equipo {
-                        @include display(flex);
-                        flex-direction: column;
-                        align-items: center;
-                        p {
-                            margin: 0;
-                            @include marginBottom(2px);
-                        }
-                    }
-                    .versus {
-                        @include width(34px);
-                        @include height(25px);
-                        margin-right: 10px;
-                        margin-left: 10px;
-                    }
-                    img {
-                        @include width(30px);
-                    }
-                }
-            }
+        p {
+          text-align: center;
+          margin-top: 4px;
+          font-weight: bold;
         }
-        .tituloJornada {
+      }
+    }
+  }
+  aside {
+    //width: 25%;
+    @include width(28%);
+    margin: 3%;
+    background-color: $whiteAside;
+    border: 2px solid $gray;
+    @include height(fit-content);
+    .resultados {
+      padding: 3px;
+      padding-left: 13px;
+      padding-right: 13px;
+      border-bottom: 1px solid $gray;
+      .resultado {
+        margin-bottom: 20px;
+        div {
+          @include display(flex);
+          align-items: center;
+          justify-content: space-around;
+          img {
+            @include width(38px);
+            @include height(40px);
+          }
+          p {
+            @include fontSize(9px);
             font-weight: bold;
-            font-size: 14px;
-            margin-top: 10px;
-            @include marginBottom(10px);
+          }
         }
-        .fecha {
+        p {
+          @include fontSize(11px);
+        }
+      }
+    }
+    .directos {
+      padding: 3px;
+      padding-left: 13px;
+      padding-right: 13px;
+      @include marginBottom(30px);
+      .directo {
+        .hora {
+          background-color: $black;
+          p {
+            color: $white;
+            text-align: center;
             @include fontSize(12px);
-            @include marginBottom(30px);
+          }
         }
+        .equipos {
+          @include display(flex);
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          @include marginBottom(10px);
+
+          .equipo {
+            @include display(flex);
+            flex-direction: column;
+            align-items: center;
+            p {
+              margin: 0;
+              @include marginBottom(2px);
+            }
+          }
+          .versus {
+            @include width(34px);
+            @include height(25px);
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+          img {
+            @include width(30px);
+          }
+        }
+      }
     }
-    .titulo {
-        @include fontSize(25px);
-        font-weight: bold;
-        text-align: center;
-        @include marginBottom(10px);
+    .tituloJornada {
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 10px;
+      @include marginBottom(10px);
     }
-    .parrafo {
-        @include fontSize(15px);
-        @include marginBottom(0px);
+    .fecha {
+      @include fontSize(12px);
+      @include marginBottom(30px);
     }
+  }
+  .titulo {
+    @include fontSize(25px);
+    font-weight: bold;
+    text-align: center;
+    @include marginBottom(10px);
+  }
+  .parrafo {
+    @include fontSize(15px);
+    @include marginBottom(0px);
+  }
 }
 //Dani Mobile-Version for 460px
-@media screen and (max-width: 460px){
-    main{
-        flex-flow: column-reverse;
-        .noticias{
-            width: 100%;
-            margin: 10px 0;
-            .principal{
-                #imagenCarousel{
-                    width: 100%;
-                }
-                #keepReading{
-                    display: none;
-                }
-            }
-            .secundarias{
-                display: flex;
-                flex-flow: column;
-                .noticiaSecundaria{
-                    width: 100%;
-                    margin: 0px;
-                    img{
-                        width: 100%;
-                        height: auto;
-                        display: block;
-                        margin: 10px auto;
-                    }
-                }
-            }
+@media screen and (max-width: 460px) {
+  main {
+    flex-flow: column-reverse;
+    .noticias {
+      width: 100%;
+      margin: 10px 0;
+      .principal {
+        #imagenCarousel {
+          width: 100%;
         }
+        #keepReading {
+          display: none;
+        }
+      }
+      .secundarias {
+        display: flex;
+        flex-flow: column;
+        .noticiaSecundaria {
+          width: 100%;
+          margin: 0px;
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+          }
+        }
+      }
     }
-    .aside{
-        margin: 0px;
-        width: 99%;
-        display: block;
-    }
-    #parrafoCarousel{
-        display: none;
-    }
+  }
+  .aside {
+    margin: 0px;
+    width: 99%;
+    display: block;
+  }
+  #parrafoCarousel {
+    display: none;
+  }
 }
 ///////End Dani
+
+/////////////////RUBEN
+footer {
+  background-color: #ea082a;
+  display: flex;
+  padding-bottom: 8%;
+  .contenedor-redes-sociales {
+    display: inline-block;
+    width: 50%;
+    ul {
+      display: flex;
+      padding: 6%;
+      li {
+        list-style: none;
+        img {
+          width: 80%;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  .contenedor-contacto-informacion {
+      display: inline-block;
+      width: 50%;
+      color: white;
+      .contenedor-contacto {
+          float: left;
+          width: 50%;
+      }
+      .contenedor-informacion {
+          float: left;
+          width: 50%;
+      }
+  }
+}

@@ -6,24 +6,24 @@
 body {
   margin: auto;
   max-width: 1000px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
   height: 200px;
-  -webkit-text-decoration: underline #EA082A;
-          text-decoration: underline #EA082A;
+  -webkit-text-decoration: underline #ea082a;
+          text-decoration: underline #ea082a;
 }
 
 header h1 {
-  color: #EA082A;
+  color: #ea082a;
   font-size: 120px;
   text-align: center;
-  font-family: 'Franklin Gothic Heavy', regular;
+  font-family: "Franklin Gothic Heavy", regular;
 }
 
 header nav {
-  background-color: #EA082A;
+  background-color: #ea082a;
   font-weight: bold;
   font-size: 20px;
   color: white;
@@ -255,5 +255,53 @@ main .parrafo {
   #parrafoCarousel {
     display: none;
   }
+}
+
+footer {
+  background-color: #ea082a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8%;
+}
+
+footer .contenedor-redes-sociales {
+  display: inline-block;
+  width: 50%;
+}
+
+footer .contenedor-redes-sociales ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6%;
+}
+
+footer .contenedor-redes-sociales ul li {
+  list-style: none;
+}
+
+footer .contenedor-redes-sociales ul li img {
+  width: 80%;
+}
+
+footer .contenedor-redes-sociales ul li span {
+  display: none;
+}
+
+footer .contenedor-contacto-informacion {
+  display: inline-block;
+  width: 50%;
+  color: white;
+}
+
+footer .contenedor-contacto-informacion .contenedor-contacto {
+  float: left;
+  width: 50%;
+}
+
+footer .contenedor-contacto-informacion .contenedor-informacion {
+  float: left;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

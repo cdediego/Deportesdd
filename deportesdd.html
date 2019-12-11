@@ -11,20 +11,22 @@
   <body onload = "startCarousel()">
     <header>
         <h1>DIARIODD</h1>
-
         <nav>
             <a href="#">Futbol</a> |
             <a href="#">NBA</a> |
             <a href="#">Golf</a> |
             <a href="#">Tenis</a> |
             <a href="#">Fórmula 1</a>
+            <div>
+                <select>
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion1">opcion1</option>
+                </select>
+            </div>
+            
         </nav>
-        <select>
-        <option value="opcion1">opcion1</option>
-        <option value="opcion1">opcion1</option>
-        <option value="opcion1">opcion1</option>
-        <option value="opcion1">opcion1</option>
-      </select>
     </header>
 
     <main>
@@ -34,7 +36,7 @@
                 <img id="imagenCarousel" src="imagenes/imagenes/img2.png">
                 <p id="titularCarousel" class="titulo">Con gol de Dybala. la Juventus ganó.</p>
                 <p id="parrafoCarousel" class="parrafo">En la anteúltima fecha de la fase de grupos de la UEFA Champions League, la Juventus se impulsó 1 a 0 ante el Atletico Madrid en Turin y se adueñó de la cima del Grupo D.</p>
-                <a href="#">Seguir leyendo</a>
+                <a id="keepReading" href="#">Seguir leyendo</a>
             </div>
 
             <div class="secundarias">
@@ -179,6 +181,7 @@
                 </ul>
             </div>
             <div class="contenedor-informacion">
+                <h4>INFORMACION</h4>
                 <ul>
                     <li><a href="#">¿Quienes Somos?</a></li>
                     <li><a href="#">Fundación diarioDD</a></li>

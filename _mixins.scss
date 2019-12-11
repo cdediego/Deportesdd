@@ -1,0 +1,24 @@
+@mixin imageMaxSize(){
+    width: 460px;
+    height: auto;
+}
+
+@mixin width( $valor ){
+    width: $valor;
+}
+
+@mixin height( $valor ){
+    height: $valor;
+}
+
+@mixin display( $valor ){
+    display: $valor;
+}
+
+@mixin marginBottom( $valor ){
+    margin-bottom: $valor;
+}
+
+@mixin fontSize( $valor ){
+    font-size: $valor;
+}

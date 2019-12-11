@@ -132,10 +132,13 @@ main {
         margin: 3%;
         .principal {
             @include marginBottom(35px);
-            #imagenCarousel {
+            .imagenCarousel {
                 @include width(95%);
                 @include height(auto);
             }
+        }
+        .hiddenPrincipal {
+            display: none;
         }
         .secundarias {
             @include display(flex);
@@ -264,10 +267,14 @@ main {
             .principal {
                 #imagenCarousel {
                     width: 100%;
+                    background: url(imagenes/imagenes/img2.png) no-repeat;
                 }
                 #keepReading {
                     display: none;
                 }
+            }
+            .hiddenPrincipal {
+                display: block;
             }
             .secundarias {
                 display: flex;

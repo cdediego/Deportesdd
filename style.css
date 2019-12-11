@@ -166,9 +166,13 @@ main .noticias .principal {
   margin-bottom: 35px;
 }
 
-main .noticias .principal #imagenCarousel {
+main .noticias .principal .imagenCarousel {
   width: 95%;
   height: auto;
+}
+
+main .noticias .hiddenPrincipal {
+  display: none;
 }
 
 main .noticias .secundarias {
@@ -339,9 +343,13 @@ main .parrafo {
   }
   main .noticias .principal #imagenCarousel {
     width: 100%;
+    background: url(imagenes/imagenes/img2.png) no-repeat;
   }
   main .noticias .principal #keepReading {
     display: none;
+  }
+  main .noticias .hiddenPrincipal {
+    display: block;
   }
   main .noticias .secundarias {
     display: -webkit-box;

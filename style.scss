@@ -131,7 +131,6 @@ header {
     @media only screen and (min-width: 690px) {
     h1 { 
         font-size: 5.4vw;
-        
         }
     }
     
@@ -152,19 +151,22 @@ header {
             display: unset;
         }
      }
-}
 
-@media only screen and (max-width: 865px) {
-    ul{
-        display: none !important;
-    }
-    nav{
-        display: inline !important;
-        padding-left: 5px;
-        padding-bottom: 5px;
-    }
-    .dropbtn {
-        background-color: transparent !important;
+     @media only screen and (max-width: 865px) {
+        header{
+            ul{
+                display: none !important;
+            }
+            nav{
+                display: inline !important;
+                padding-left: 5px;
+                padding-bottom: 5px;
+            }
+            
+        }
+        .dropbtn {
+            background-color: transparent !important;
+        }
     }
 }
 

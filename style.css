@@ -184,15 +184,15 @@ header .login:hover .login-content {
 }
 
 @media only screen and (max-width: 865px) {
-  ul {
+  header header ul {
     display: none !important;
   }
-  nav {
+  header header nav {
     display: inline !important;
     padding-left: 5px;
     padding-bottom: 5px;
   }
-  .dropbtn {
+  header .dropbtn {
     background-color: transparent !important;
   }
 }

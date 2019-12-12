@@ -82,6 +82,40 @@ header .dropbtn {
   background-size: 40px 40px;
 }
 
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdown:hover .dropbtn {
+  background-color: #ea082a;
+}
+
 header .login2 {
   background-color: transparent;
   color: white;
@@ -146,21 +180,6 @@ header .login:hover .login-content {
   }
   header .login2 {
     display: unset;
-  }
-}
-
-@media only screen and (max-width: 690px) {
-  h1 {
-    margin-left: 150px;
-    padding-bottom: 0px !important;
-  }
-  ul {
-    display: none !important;
-  }
-  nav {
-    display: inline !important;
-    padding-left: 5px;
-    padding-bottom: 5px;
   }
 }
 
@@ -359,7 +378,6 @@ main .parrafo {
 
 @media screen and (max-width: 460px) {
   main {
-    width: 460px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-flow: column-reverse;
@@ -414,7 +432,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 8%;
-  font-family: "Franklin Gothic Book";
 }
 
 footer .contenedor-redes-sociales {
@@ -445,7 +462,6 @@ footer .contenedor-contacto-informacion {
   display: inline-block;
   width: 50%;
   color: white;
-  padding-top: 3%;
 }
 
 footer .contenedor-contacto-informacion .contenedor-contacto {
@@ -453,100 +469,8 @@ footer .contenedor-contacto-informacion .contenedor-contacto {
   width: 50%;
 }
 
-footer .contenedor-contacto-informacion .contenedor-contacto h4 {
-  padding-bottom: 6%;
-  font-weight: normal;
-}
-
-footer .contenedor-contacto-informacion .contenedor-contacto li {
-  list-style: none;
-  padding-bottom: 5%;
-}
-
 footer .contenedor-contacto-informacion .contenedor-informacion {
   float: left;
   width: 50%;
-}
-
-footer .contenedor-contacto-informacion .contenedor-informacion h4 {
-  padding-bottom: 6%;
-  font-weight: normal;
-}
-
-footer .contenedor-contacto-informacion .contenedor-informacion li {
-  list-style: none;
-  padding-bottom: 4%;
-}
-
-footer .contenedor-contacto-informacion .contenedor-informacion li a {
-  text-decoration: none;
-  color: white;
-}
-
-@media screen and (max-width: 460px) {
-  footer {
-    width: 460px;
-    background-color: #ea082a;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 5%;
-    font-family: "Franklin Gothic Book";
-  }
-  footer .contenedor-redes-sociales {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 50%;
-  }
-  footer .contenedor-redes-sociales ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 6%;
-  }
-  footer .contenedor-redes-sociales ul li {
-    list-style: none;
-  }
-  footer .contenedor-redes-sociales ul li img {
-    width: 80%;
-  }
-  footer .contenedor-redes-sociales ul li span {
-    padding-left: 1%;
-  }
-  footer .contenedor-contacto-informacion {
-    display: inline-block;
-    width: 50%;
-    color: white;
-    padding-top: 3%;
-  }
-  footer .contenedor-contacto-informacion .contenedor-contacto {
-    float: left;
-    width: 50%;
-  }
-  footer .contenedor-contacto-informacion .contenedor-contacto h4 {
-    padding-bottom: 6%;
-    font-weight: normal;
-  }
-  footer .contenedor-contacto-informacion .contenedor-contacto li {
-    list-style: none;
-    padding-bottom: 5%;
-  }
-  footer .contenedor-contacto-informacion .contenedor-informacion {
-    float: left;
-    width: 50%;
-  }
-  footer .contenedor-contacto-informacion .contenedor-informacion h4 {
-    padding-bottom: 6%;
-    font-weight: normal;
-  }
-  footer .contenedor-contacto-informacion .contenedor-informacion li {
-    list-style: none;
-    padding-bottom: 4%;
-  }
-  footer .contenedor-contacto-informacion .contenedor-informacion li a {
-    text-decoration: none;
-    color: white;
-  }
 }
 /*# sourceMappingURL=style.css.map */

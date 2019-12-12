@@ -116,6 +116,49 @@ header .dropdown:hover .dropbtn {
   background-color: #ea082a;
 }
 
+header .login2 {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  background-image: url(imagenes/logos/login.png);
+  background-size: 40px 40px;
+  display: none;
+  margin-left: 755%;
+}
+
+header .login {
+  position: relative;
+  display: inline-block;
+}
+
+header .login-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 630%;
+}
+
+header .login-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .login-content a:hover {
+  background-color: #ddd;
+}
+
+header .login:hover .login-content {
+  display: block;
+}
+
 @media only screen and (min-width: 690px) {
   header h1 {
     font-size: 5.4vw;
@@ -134,6 +177,9 @@ header .dropdown:hover .dropbtn {
     display: inline !important;
     padding-left: 5px;
     padding-bottom: 5px;
+  }
+  header .login2 {
+    display: unset;
   }
 }
 

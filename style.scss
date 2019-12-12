@@ -367,58 +367,61 @@ footer {
 }
 
 //Footer-Mobile-Version for 460px
-footer {
-  background-color: #ea082a;
-  display: flex;
-  padding-bottom: 5%;
-  font-family: "Franklin Gothic Book";
-  .contenedor-redes-sociales {
-    display: inline-flex;
-    width: 50%;
-    ul {
-      display: flex;
-      padding: 6%;
-      li {
-        list-style: none;
-        img {
-          width: 80%;
-        }
-        span {
-          padding-left: 1%;
+@media screen and (max-width: 460px) {
+  footer {
+    width: 460px;
+    background-color: #ea082a;
+    display: flex;
+    padding-bottom: 5%;
+    font-family: "Franklin Gothic Book";
+    .contenedor-redes-sociales {
+      display: inline-flex;
+      width: 50%;
+      ul {
+        display: flex;
+        padding: 6%;
+        li {
+          list-style: none;
+          img {
+            width: 80%;
+          }
+          span {
+            padding-left: 1%;
+          }
         }
       }
     }
-  }
-  .contenedor-contacto-informacion {
-    display: inline-block;
-    width: 50%;
-    color: white;
-    padding-top: 3%;
-    .contenedor-contacto {
-      float: left;
+    .contenedor-contacto-informacion {
+      display: inline-block;
       width: 50%;
-      h4 {
-        padding-bottom: 6%;
-        font-weight: normal;
+      color: white;
+      padding-top: 3%;
+      .contenedor-contacto {
+        float: left;
+        width: 50%;
+        h4 {
+          padding-bottom: 6%;
+          font-weight: normal;
+        }
+        li {
+          list-style: none;
+          padding-bottom: 5%;
+        }
       }
-      li {
-        list-style: none;
-        padding-bottom: 5%;
-      }
-    }
-    .contenedor-informacion {
-      float: left;
-      width: 50%;
-      h4 {
-        padding-bottom: 6%;
-        font-weight: normal;
-      }
-      li {
-        list-style: none;
-        padding-bottom: 4%;
-        a {
-          text-decoration: none;
-          color: white;
+      .contenedor-informacion {
+        float: left;
+        width: 50%;
+        h4 {
+          padding-bottom: 6%;
+          font-weight: normal;
+        }
+        li {
+          list-style: none;
+          padding-bottom: 4%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
     }
